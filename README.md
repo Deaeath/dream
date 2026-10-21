@@ -1,0 +1,12 @@
+# Dream
+
+Everything for 3DX, in one place: https://deaeath.github.io/dream/
+
+- **3DX World Editor**: build 3DXChat worlds in your browser. https://deaeath.github.io/3dx-world-editor/
+- **The Hephaestus Forge**: every world a live channel; JARVIS builds what you ask.
+- **3DX Profile Studio**: write your profile like a document. https://deaeath.github.io/3dx-profile-studio/
+- **3DX Radio Streamer**: your own internet radio station. https://github.com/Deaeath/3dx-radio-streamer
+- **3DXModKit & 3dxGC**: a client-side mod framework, and the game's memory kept tidy. https://github.com/Deaeath/3DXModKit
+- **3DXChat Toolkit**: coming soon.
+
+By KingColossus.

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dream</title>
+<meta name="description" content="Dream: everything for 3DX. The 3DX World Editor, the Hephaestus Forge, Profile Studio, the Radio Streamer, the ModKit and more. By KingColossus.">
+<meta property="og:title" content="Dream: everything for 3DX">
+<meta property="og:description" content="Worlds built live by JARVIS, profiles that read like a magazine, your own radio station, and the tools that keep the game smooth.">
+<meta property="og:image" content="https://deaeath.github.io/dream/img/forge.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+<style>
+
+  :root { --bg: #07060b; --fg: #f3ece2; --mut: #b9ab9a; --gold: #ffcf7a; --ember: #ff8a3c; --card: #120f17; --line: #2a2230; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 18px/1.55 "Segoe UI", system-ui, sans-serif; overflow-x: hidden; }
+  body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
+    background: radial-gradient(1200px 600px at 50% 110%, rgba(255,110,30,.28), transparent 60%),
+                radial-gradient(900px 500px at 15% -10%, rgba(120,60,200,.22), transparent 60%),
+                radial-gradient(700px 400px at 90% 0%, rgba(40,140,200,.14), transparent 60%); }
+  header { min-height: 92vh; display: grid; place-items: center; text-align: center; padding: 60px 20px; }
+  .kicker { font-family: Cinzel, serif; letter-spacing: .5em; color: var(--gold); font-size: 15px; }
+  h1 { font-family: 'Cinzel Decorative', serif; font-size: clamp(64px, 12vw, 168px); margin: .1em 0 .05em; letter-spacing: .04em;
+    background: linear-gradient(180deg, #fff1d6 10%, #ffb04a 55%, #ff6a1a 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 0 30px rgba(255,140,40,.35)); }
+  .tag { font-family: Cinzel, serif; font-size: clamp(18px, 2.4vw, 28px); letter-spacing: .12em; color: var(--fg); }
+  .sub { color: var(--mut); max-width: 640px; margin: 18px auto 0; }
+  main { max-width: 1240px; margin: 0 auto; padding: 0 24px 120px; }
+  h2 { font-family: Cinzel, serif; letter-spacing: .3em; text-align: center; color: var(--gold); font-weight: 400; font-size: 18px; margin: 30px 0 34px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 26px; }
+  .card { background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01)); border: 1px solid var(--line); border-radius: 18px;
+    overflow: hidden; display: flex; flex-direction: column; transition: transform .5s, box-shadow .5s; }
+  .card.hot { transform: scale(1.03); box-shadow: 0 0 0 2px var(--gold), 0 20px 80px rgba(255,140,40,.25); }
+  .shot { aspect-ratio: 16 / 10; background: #000 center / cover no-repeat; border-bottom: 1px solid var(--line); }
+  .shot.contain { background-size: contain; background-color: #0d0b12; }
+  .body { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .name { font-family: Cinzel, serif; font-size: 24px; letter-spacing: .06em; }
+  .what { color: var(--mut); font-size: 16px; flex: 1; }
+  .go { align-self: flex-start; margin-top: 8px; color: #1a0f05; background: linear-gradient(180deg, #ffd58a, #ff9a3c); padding: 9px 16px; border-radius: 999px;
+    text-decoration: none; font-weight: 600; font-size: 15px; }
+  .go.soon { background: #2a2230; color: var(--mut); }
+  footer { text-align: center; color: var(--mut); font-family: Cinzel, serif; letter-spacing: .3em; font-size: 13px; padding: 40px 0 60px; }
+  @media (max-width: 600px) { main { padding: 0 16px 80px; } .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="kicker">EVERYTHING FOR 3DX</div>
+    <h1>Dream</h1>
+    <div class="tag">Build it. Wear it. Play it. Live.</div>
+    <p class="sub">Worlds built live by JARVIS, a profile that reads like a page from a magazine, your own radio station, and the tools that keep the game running smoothly. One home for all of it.</p>
+  </div>
+</header>
+<main>
+  <h2>THE DREAM LINE-UP</h2>
+  <div class="grid">
+    <section class="card" id="editor">
+      <div class="shot" style="background-image:url(img/editor.jpg)"></div>
+      <div class="body"><div class="name">3DX World Editor</div>
+        <div class="what">Build 3DXChat worlds in your browser with the game's real models. Pose zones, the showcase look, walk tests, and an AI builder at your side.</div>
+        <a class="go" href="https://deaeath.github.io/3dx-world-editor/">Open the editor</a></div>
+    </section>
+    <section class="card" id="forge">
+      <div class="shot" style="background-image:url(img/forge.jpg)"></div>
+      <div class="body"><div class="name">The Hephaestus Forge</div>
+        <div class="what">Every world a live channel. Type what you want and watch JARVIS build it, piece by piece, out loud, with everyone in the world watching.</div>
+        <a class="go" href="https://deaeath.github.io/3dx-world-editor/">Enter the Forge</a></div>
+    </section>
+    <section class="card" id="profile">
+      <div class="shot" style="background-image:url(img/profile.png)"></div>
+      <div class="body"><div class="name">3DX Profile Studio</div>
+        <div class="what">Write your 3DXChat profile like a document: bold, colours, sizes, gradients, symbols and flags, with an AI writer. Copy the code, paste it in the game.</div>
+        <a class="go" href="https://deaeath.github.io/3dx-profile-studio/">Open Profile Studio</a></div>
+    </section>
+    <section class="card" id="radio">
+      <div class="shot contain" style="background-image:url(img/radio.png)"></div>
+      <div class="body"><div class="name">3DX Radio Streamer</div>
+        <div class="what">Your own internet radio station. Pick your music, press one big button, and friends anywhere can listen, in the game or out of it.</div>
+        <a class="go" href="https://github.com/Deaeath/3dx-radio-streamer/releases/latest">Download</a></div>
+    </section>
+    <section class="card" id="modkit">
+      <div class="shot contain" style="background-image:url(img/modkit.png)"></div>
+      <div class="body"><div class="name">3DXModKit &amp; 3dxGC</div>
+        <div class="what">A client-side mod framework for 3DXChat, with 3dxGC: the game's memory kept tidy automatically, no RAMMap babysitting.</div>
+        <a class="go" href="https://github.com/Deaeath/3DXModKit/releases/latest">Download</a></div>
+    </section>
+    <section class="card" id="toolkit">
+      <div class="shot contain" style="background-image:url(img/toolkit.png)"></div>
+      <div class="body"><div class="name">3DXChat Toolkit</div>
+        <div class="what">Cache and network checks, community-world diagnostics, and walk maps that prove every seat in a world can be reached.</div>
+        <span class="go soon">Coming soon</span></div>
+    </section>
+  </div>
+</main>
+<footer>DREAM · BY KINGCOLOSSUS · POWERED BY BLACK POWER ✊🏿</footer>
+</body>
+</html>
